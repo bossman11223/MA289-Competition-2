@@ -1,0 +1,65 @@
+Overview
+MA289 Data Science – Spoken Digit Audio Classification Competition (6 vs 7)
+This competition is part of competitino 2 and is designed to introduce you to audio feature engineering and binary classification using classical machine learning methods.
+
+In this competition, you will work with the Spoken MNIST audio dataset, focusing specifically on spoken digits 6 and 7.
+
+The dataset includes:
+
+Raw audio waveforms (spoken digits)
+Spectrogram representations of audio
+Multiple speakers (introducing natural variation)
+High-dimensional numeric feature representations
+Your task is to:
+
+Apply the SVM classification models
+Use only SVM-derivative methods reviewed in this course
+Evaluate model performance using appropriate metrics
+You should focus on:
+
+Train/test separation
+Feature scaling
+Model comparison (LDA, Logistic Regression, SVM, KNN, Decision Tree Classification)
+Model evaluation and competition performance
+Due Date
+1159 16 OCT 26
+Start
+
+Sep 30, 2026
+Close
+
+Oct 16, 2026
+Description
+What You Are Predicting
+In this competition, you are classifying spoken digit 6 versus spoken digit 7.
+
+For modeling and evaluation purposes, the original digits have been recoded into binary labels:
+
+0 → Spoken digit 6
+1 → Spoken digit 7 (positive class)
+Your task is to predict:
+
+The probability that a given recording corresponds to spoken digit 7.
+
+Even though the original recordings contain the spoken words “six” and “seven,” the dataset you receive uses the binary labels 0 and 1 to simplify modeling and scoring.
+
+When you submit predictions, your Probability column should represent:
+
+A value close to 0 if the model believes the recording is digit 6
+A value close to 1 if the model believes the recording is digit 7
+Evaluation is performed using ROC AUC.
+
+Evaluation
+Submissions are scored using ROC AUC (Receiver Operating Characteristic – Area Under the Curve) based on your predicted probabilities for the positive class (7).
+
+Higher ROC AUC values indicate better performance. A model with perfect separation achieves an AUC of 1.0, while a model that performs no better than random guessing has an AUC of 0.5.
+
+Submission File
+For each ID in the test set, you must provide the predicted probability that the spoken digit is 1.
+
+Your submission file must:
+
+Be in CSV format
+Contain a header
+Include exactly two columns: ID and Probability
+Match the order of rows in the test dataset

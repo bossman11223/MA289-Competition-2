@@ -1,0 +1,7 @@
+model,cv_auc_mean,cv_auc_std,features,params
+SVM-linear,0.9994999999999999,0.0004677071733467683,gray+scale+pca50,defaults
+LogReg,0.9993749999999999,0.0005590169943749852,gray+scale+pca50,defaults
+SVM-rbf,0.998625,0.001600781059358218,gray+scale+pca50,defaults
+LDA,0.997875,0.0026100766272276364,gray+scale+pca50,defaults
+KNN,0.9911875,0.007254847517350026,gray+scale+pca50,defaults
+DecisionTree,0.845,0.04227883631321942,gray+scale+pca50,defaults
